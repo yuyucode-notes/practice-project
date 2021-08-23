@@ -1,0 +1,20 @@
+{
+  "name": "practice-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yuyucode-notes/practice-project.git",
+  "author": "yuyucode1125 <1440771511@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.7.1",
+    "prisma": "^2.29.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.29.1"
+  },
+  "scripts":{
+    "model:dev": "ts-node prisma/index.ts"
+  }
+}
