@@ -1,13 +1,22 @@
+import {IsString, IsInt} from 'class-validator';
+
+
+
 export class CreateCatDto {
-    readonly name: string;
-    readonly age: number;
-    readonly breed: string;
+    @IsString()
+    name: string;
+
+    @IsInt()
+    age: number;
+
+    @IsString()
+    breed: string;
 }
 
-export class UpdateCatDto{
+export class CreateCatQueryDto {
+    @IsString()
+    a: string;
 
-}
-
-export class ListAllEntities{
-    limit: any
+    @IsInt()
+    b: number;
 }

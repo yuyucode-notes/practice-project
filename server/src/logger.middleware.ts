@@ -10,3 +10,9 @@ export function logger2(req, res, next) {
     next();
 }
 
+
+export function globalLogger(req, res, next) {
+    console.log(globalLogger.name, `全局中间件globalLogger`)
+    next();
+}
+
