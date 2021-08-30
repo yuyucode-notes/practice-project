@@ -7,12 +7,15 @@ import {logger2, logger1} from "./logger.middleware";
 import {APP_FILTER} from '@nestjs/core';
 import {HttpExceptionFilter} from "./http-exception.filter";
 import {ValidationPipe} from "./validate.pipe";
+import {PostService} from "./service/post.service";
+import {UserService} from "./service/user.service";
+import {PrismaService} from "./service/prisma.service";
 
 
 @Module({
     imports: [CatsModule, ConfigModule.register({folder: './config'})], // 导入模块
     controllers: [AppController], // 导入控制器，例如访问路由
-    providers: [AppService,
+    providers: [AppService,PostService,UserService,PrismaService
         // 全局过滤器
         // {
         //     provide: APP_FILTER,

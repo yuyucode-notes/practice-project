@@ -9,7 +9,7 @@ export interface Response<T> {
 }
 
 /**
- * 用于返回统一的格式
+ * 拦截器：用于返回统一的格式
  */
 
 @Injectable()

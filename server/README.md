@@ -6,6 +6,7 @@
 服务层
 
 ├── config                                                    配置
+├── prisma                                                    数据层
 ├── dist                                                      运行生成目录
 ├── src                                                       入口目录
     ├──  app.controller.ts                                    控制器
